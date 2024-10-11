@@ -6,30 +6,56 @@
     <title>Home</title>
     <script src="script.js"></script> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nightmode.css">
     <link rel="stylesheet" href="homepage.css">
 </head>
-<body>
+<body id="bodyday" class="bodyday">
     <header class="banner">
-        <div class="home"><img class="homeicon" src="home.png"></div>
-        <div class="ubrania"><p>Ubrania</p></div>
-        <div class="kalkulator"><p>Dobierz rozmiar</p></div>
-        <div class="wyszukiwarka"><p>Wyszukaj: </p></div>
-        <div class="koszyk">
+
+        <div class="home" role="button" onclick="gohome()"><img class="homeicon" src="home.png"></div>
+        
+        <div class="ubrania" role="button" onclick="goclothes()"><p>Ubrania</p></div>
+
+        <div class="rozmiary" role="button" onclick="gosize()">Dobierz rozmiar</div>
+
+        <div class="wyszukiwarka">Wyszukaj:
+            <div><input class="searchbar" type="text"></div>
+            <div class="searchgo" role="button"><img src="search.png"></div>
+        </div>
+
+        <div class="koszyk" role="button" onclick="gocart()">
             <div class="cart">
                 <img src="cart.png" class="carticon">
             </div>
-            <div class="cartcounter"><p>5</p></div>
+            <div class="cartcounter">5</div>
         </div>
-        <div class="trybnocny"><p>NOC</p></div>
+
+        <div class="trybnocny" role="button" onclick="gonight()">
+            <div class="sun"><img class="sunimg" src="sun.png"></div>
+            <div class="slash">/</div>
+            <div class="moon"><img class="moonimg" src="moon.png"></div>
+        </div>
+
     </header>
 
     <div class="main">
-        <div class="mainblock"></div>
+        <div id="mainhome">
+            <a class="kolekcje" href="clothes.html"><img class="kolekcjeimg" src="kolekcje.png"></a>
+        </div>
+
+        <!-- <div id="mainclothes">
+
+            <div class="clotheschoice1">
+                <div class="clothesman">Mężczyzna</div>
+                <div class="clothesmanimg"><img class="xman" src="man.png"></div>
+            </div>
+
+            <div class="clotheschoice2">
+                <div class="clotheswoman">Kobieta</div>
+                <div class="clotheswomanimg"><img class="xman" src="woman.png"></div>
+            </div> -->
     </div>
 
 
-
-
-    <footer class="stopa"></footer>
 </body>
 </html>

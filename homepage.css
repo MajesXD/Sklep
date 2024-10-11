@@ -1,0 +1,117 @@
+.main {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffd4534b;
+    display: flex;
+    justify-content: center;
+}
+
+#mainhome {
+    width: 100%;
+    min-height: 82vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+
+}
+    .kolekcje {
+        width: 20%;
+        height: 70vh;
+    }
+    .kolekcjeimg {
+        width: 100%;
+        height: 100%;
+    }
+#mainclothes {
+    width: 100%;
+    min-height: 82vh;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    font-size: 250%;
+}
+
+    .clotheschoice1 {
+        width: 30%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1vh;
+        border-color: rgb(0, 0, 0);
+        color: white;
+
+    }
+    .clotheschoice2 {
+        width: 30%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1vh;
+        border-style: solid;
+        border-width: 1vh;
+        border-color: rgb(255, 255, 255);
+        color: black;
+
+    }
+        .clothesman {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .clotheswoman {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .clothesmanimg {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clotheswomanimg {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .xman {
+            height: 100%;
+            width: 100%;
+        }
+
+#mainsize {
+    width: 100%;
+    min-height: 82vh;
+    height: auto;
+    background-color: rgb(30, 0, 255);
+    display: none;
+}
+
+#maincart {
+    width: 100%;
+    min-height: 82vh;
+    height: auto;
+    background-color: rgb(255, 0, 242);
+    display: none;
+}

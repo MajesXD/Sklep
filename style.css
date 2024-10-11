@@ -1,7 +1,7 @@
 .banner {
     width: 100%;
     height: 15vh;
-    background-color: grey;
+    background-color: rgba(84, 84, 84, 0.726);
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -27,16 +27,16 @@
         }
     .ubrania {
         width: 6%;
-        height: 70%;
+        height: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 2%;
     }
 
-    .kalkulator {
+    .rozmiary {
         width: 10%;
-        height: 70%;
+        height: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,14 +44,22 @@
     }
 
     .wyszukiwarka {
-        width: 25%;
-        height: 70%;
+        width: 20%;
+        height: 40%;
         display: flex;
         justify-content: left;
         align-items: center;
         margin-left: 2%;
     }
-
+        .searchbar{
+            margin-left: 3%;
+        }
+        .searchgo{
+            width: 30%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+        }
     .koszyk {
         width: 7%;
         height: 70%;
@@ -87,31 +95,53 @@
 
     .trybnocny {
         width: 5%;
-        height: 70%;
+        height: 40%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
         margin-left: 1%;
         margin-top: 0.5%;
+        font-size: 180%;
     }
+        .slash {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-left: 2%;
+        }
+        .sun {
+            width: 40%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+        }
+            .sunimg {
+                width: 100%;
+                height: 100%;  
+            }
+        .moon {
+            width: 40%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            margin-left: 2%;
+           
+        }
+            .moonimg {
+                width: 100%;
+                height: 100%;  
+            }
 
-
-.main {
-    width: 100%;
-    height: fit-content;
-    background-color: #ffc433;
-    display: flex;
-    justify-content: center;
+.bodyday {
+    background-color: #ffd45385;
 }
 
-.mainblock {
-    width: 100%;
-    height: 82vh;
-    background-color: #ffc433;
-    display: flex;
-    justify-content: center;
-}
 
-.stopa {
+
+
+/* .stopa {
     width: 100%;
     height: 3vh;
     background-color: black;
@@ -119,4 +149,4 @@
     justify-content: center;
     position: sticky;
     bottom: 0;
-}
+} */
