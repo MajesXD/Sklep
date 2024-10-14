@@ -2,30 +2,29 @@ function gonight() {
     document.getElementById("bodyday").classList.toggle("bodynight");
 }
 
-function gohome() {
-    document.getElementById("mainhome").style.display = "flex";
-    document.getElementById("mainclothes").style.display = "none";
-    document.getElementById("mainsize").style.display = "none";
-    document.getElementById("maincart").style.display = "none";
-}
+function loadbanner(){
+    var ban = `<a class="home" href="homepage.html"><img class="homeicon" src="img/home.png"></a>
+    
+    <a class="ubrania" href="clothes.html"><p>Ubrania</p></a>
 
-function goclothes() {
-    document.getElementById("mainhome").style.display = "none";
-    document.getElementById("mainclothes").style.display = "flex";
-    document.getElementById("mainsize").style.display = "none";
-    document.getElementById("maincart").style.display = "none";
-}
+    <a class="rozmiary" >Dobierz rozmiar</a>
 
-function gosize() {
-    document.getElementById("mainhome").style.display = "none";
-    document.getElementById("mainclothes").style.display = "none";
-    document.getElementById("mainsize").style.display = "flex";
-    document.getElementById("maincart").style.display = "none";
-}
+    <div class="wyszukiwarka">Wyszukaj:
+        <div><input class="searchbar" type="text"></div>
+        <div class="searchgo" role="button"><img src="img/search.png"></div>
+    </div>
 
-function gocart() {
-    document.getElementById("mainhome").style.display = "none";
-    document.getElementById("mainclothes").style.display = "none";
-    document.getElementById("mainsize").style.display = "none";
-    document.getElementById("maincart").style.display = "flex";
+    <div class="koszyk" role="button">
+        <div class="cart">
+            <img src="img/cart.png" class="carticon">
+        </div>
+        <div class="cartcounter">5</div>
+    </div>
+
+    <div class="trybnocny" role="button" onclick="gonight()">
+        <div class="sun"><img class="sunimg" src="img/sun.png"></div>
+        <div class="slash">/</div>
+        <div class="moon"><img class="moonimg" src="img/moon.png"></div>
+    </div>`
+    document.getElementById("banner").innerHTML=ban;
 }
